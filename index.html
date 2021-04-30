@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>Emille Juliene Armentia</title>
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <header class="container col-12">
+        <div class="px-lg-5 px-md-3 px-4 border-x-menu">
+            <div class="em-header em-logo">
+                <a class="" href="index.html">Em.</a>
+            </div>
+            <nav>
+                <ul class="container">
+                    <li class="container-fluid menu-toggle-exit">
+                        <i class="fas fa-times"></i>
+                    </li>
+                    <li>
+                        <a class="toggle-exit" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="toggle-exit" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class="toggle-exit" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content-->
+    <main>
+        <!-- Landing Page -->
+        <section>
+            <div class="container text-center spc">
+                <h1 class="em-header px-2">Hi! I'm Emille Juliene.</h1>
+                <p class="px-auto">a designer and developer with a deep passion for creating user-centered digital
+                    products.</p>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section>
+            <div class="container pt-5" id="portfolio">
+
+                <div class="row p-2 bg-light border mb-4 mb-md-4 mb-lg-5">
+                    <div class="col-lg-6 col-sm-12 d-flex justify-content-center">
+                        <img src="/assets/img/img.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-6 col-sm-12 my-4 order-lg-first">
+                        <h3 class="proj-header">Fast Finder</h3>
+                        <p>An application developed to help students of STI College Cubao find faculty and staff
+                            employees
+                            inside their campus.</p>
+                        <a href="fast-finder.html">View Case Study</a>
+                    </div>
+
+                </div>
+
+                <div class="row p-2 bg-light border my-4 my-md-4 my-lg-5">
+                    <div class="col-lg-6 col-sm-12 d-flex justify-content-center">
+                        <img src="/assets/img/img.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 col-sm-12 my-4">
+                        <h2 class="proj-header">MNDZ Studio Website</h2>
+                        <p>A portfolio website designed to potentially land more clients. </p>
+                        <a href="mndz-studio.html">View Case Study</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Contact -->
+    <footer class="contact contact-spc">
+        <div class="container text-center py-4 py-md-4 py-lg-5" id="contact">
+            <h1 class="em-header">Let's get in touch.</h1>
+            <p>I'm down with chatting about work or play!</p>
+            <a href="https://www.linkedin.com/in/emille-juliene-armentia"><i
+                    class="fab fa-linkedin contact-link"></i></a>
+            <a href="mailto:emarmentia@gmail.com"><i class="fas fa-envelope-square contact-link mail-space"></i></a>
+            <a href="https://dribbble.com/emillejuliene"><i class="fab fa-dribbble-square contact-link"></i> </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('.menu-toggle').click(function () {
+                $('header nav').toggleClass('active')
+            });
+
+            $('.menu-toggle-exit').click(function () {
+                $('header nav').removeClass('active')
+            });
+
+            $('.toggle-exit').click(function () {
+                $('header nav').removeClass('active')
+            });
+
+        })
+    </script>
+
+</body>
+
+</html>
