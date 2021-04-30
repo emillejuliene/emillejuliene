@@ -241,16 +241,16 @@ header nav ul li a:hover {
 
 @media (max-width: 767px) {
     header nav ul li a {
-        padding-top: 10px;
+        padding-top: 5px;
     }
     .menu-toggle {
-        padding-top: 10px;
+        padding-top: 5px;
     }
     .em-logo a {
-        padding-top: 10px;
+        padding-top: 5px;
     }
     .menu-toggle-exit{
-        padding-top: 10px;
+        padding-top: 5px;
     }
 }
 
