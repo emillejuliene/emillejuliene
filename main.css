@@ -212,6 +212,10 @@ header nav ul li a:hover {
     margin-left: 0;
 }
 
+h1 .contact-header{
+    font-size: 25px!important;
+}
+
 /*Media Queries*/
 
 /* Extra small devices (portrait phones, less than 576px) */
