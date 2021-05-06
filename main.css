@@ -232,6 +232,13 @@ h1 .contact-header {
     .imgs-resize3 {
         display: none!important;
     }
+    .center-im{
+        padding-left: 20px!important;
+    }
+    .extra-pd {
+        padding-top: 1.2rem;
+    }
+
 }
 
 
@@ -242,6 +249,13 @@ h1 .contact-header {
         font-size: 14px;
         font-weight: 500;
         line-height: 2rem;
+    }
+
+    .center-im{
+        padding-left: 20px!important;
+    }
+    .extra-pd {
+        padding-top: 1.2rem;
     }
 
 }
@@ -277,6 +291,10 @@ h1 .contact-header {
 
     .mb-fs{
         margin-top: 11px!important;
+    }
+
+    .center-im{
+        padding-left: 0px;
     }
 }
 
