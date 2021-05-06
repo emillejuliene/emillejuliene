@@ -90,9 +90,6 @@ header nav ul li a:hover {
     float: left;
 }
 
-.list-in {
-    padding-left: 1.9rem;
-}
 
 .em-menu {
     padding-top: 9px;
@@ -246,6 +243,9 @@ h1 .contact-header {
         padding-left: 0.7rem!important;
         padding-right: 0.7rem!important;
     }
+    .list-in {
+        padding-left: 1.9rem;
+    }
 }
 
 
@@ -271,6 +271,9 @@ h1 .contact-header {
         padding-left: 0.7rem!important;
         padding-right: 0.7rem!important;
     }
+    .list-in {
+        padding-left: 1.9rem;
+    }
 
 }
 
@@ -282,7 +285,7 @@ h1 .contact-header {
         max-width: 900px;
     }
     .cs-text {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 500;
         line-height: 1.7rem;
     }
@@ -309,6 +312,9 @@ h1 .contact-header {
 
     .center-im{
         padding-left: 0px;
+    }
+    .list-in {
+        padding-left: 1.1rem;
     }
 }
 
@@ -372,7 +378,7 @@ h1 .contact-header {
 
 @media (min-width: 992px) {
     .cs-text {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 500;
         line-height: 2.3rem;
     }
