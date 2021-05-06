@@ -4,16 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Playfair+Display:wght@700;800&display=swap');
 /*Overridden Styles*/
 
-html, body {
-  overflow-x: hidden;
-  width:100%;
-}
-
 body {
     font-family: 'Heebo', sans-serif;
     background-color: #FAFAFA;
     color: #1B1B1B;
-    position: relative;
 }
 
 header nav {
@@ -46,9 +40,11 @@ header nav ul li a:hover {
     color: #1D1D1D;
 }
 
+
 .border {
     border-color: #B3B3B3!important;
 }
+
 
 /*Custom Styles*/
 
@@ -229,7 +225,7 @@ h1 .contact-header {
 
 @media (max-width: 575px) {
     .cs-text {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         line-height: 2rem;
     }
@@ -243,7 +239,7 @@ h1 .contact-header {
 
 @media (min-width: 576px) {
     .cs-text {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         line-height: 2rem;
     }
