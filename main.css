@@ -238,6 +238,9 @@ h1 .contact-header {
     .extra-pd {
         padding-top: 2rem;
     }
+    .extra-pd-1{
+        padding-top: 1rem;
+    }
 
 }
 
@@ -256,6 +259,9 @@ h1 .contact-header {
     }
     .extra-pd {
         padding-top: 1.7rem;
+    }
+    .extra-pd-1{
+        padding-top: 1rem;
     }
 
 }
