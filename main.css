@@ -88,10 +88,9 @@ header nav ul li a:hover {
     float: left;
 }
 
-.list-in{
+.list-in {
     padding-left: 1.9rem;
 }
-
 
 .em-menu {
     padding-top: 9px;
@@ -128,8 +127,6 @@ header nav ul li a:hover {
     margin-left: 0.5rem!important;
     margin-right: 0.5rem!important;
 }
-
-
 
 .spc {
     padding-top: 7.5vh;
@@ -212,7 +209,7 @@ header nav ul li a:hover {
     margin-left: 0;
 }
 
-h1 .contact-header{
+h1 .contact-header {
     font-size: 25px!important;
 }
 
@@ -230,7 +227,11 @@ h1 .contact-header{
         font-weight: 500;
         line-height: 2rem;
     }
+    .imgs-resize3 {
+        display: none!important;
+    }
 }
+
 
 /* Small devices (landscape phones, 576px and up) */
 
@@ -240,7 +241,9 @@ h1 .contact-header{
         font-weight: 500;
         line-height: 2rem;
     }
+
 }
+
 
 /* Medium devices (tablets, 768px and up) */
 
@@ -252,6 +255,26 @@ h1 .contact-header{
         font-size: 16px;
         font-weight: 500;
         line-height: 2rem;
+    }
+    .imgs-resize {
+        width: 70%;
+        align-items: baseline;
+    }
+    .imgs-resize2 {
+        width: 75%;
+        align-items: baseline;
+    }
+    
+    .extra-pd {
+        padding-top: 1.9rem;
+    }
+
+    .row{
+        --bs-gutter-x:0!important;
+    }
+
+    .mb-fs{
+        margin-top: 11px!important;
     }
 }
 
@@ -265,7 +288,7 @@ h1 .contact-header{
     .em-logo a {
         padding-top: 5px;
     }
-    .menu-toggle-exit{
+    .menu-toggle-exit {
         padding-top: 5px;
     }
 }
@@ -303,7 +326,13 @@ h1 .contact-header{
     header nav ul li a {
         padding: 2.5rem;
     }
+
+    .imgs-resize3 {
+        display: none!important;
+    }
 }
+
+    
 
 /* Large devices (desktops, 992px and up) */
 
@@ -321,12 +350,19 @@ h1 .contact-header{
         padding-left: 8.125rem!important;
         padding-right: 8.125rem!important;
     }
-
-    .imgs-resize{
-        width: 80%;
-        align-items: baseline;
+    .imgs-resize3 {
+        width: 95%;
+        padding-left: 1rem;
+        padding-top: 2rem;
+    }
+    .row{
+        --bs-gutter-x:0!important;
+    }
+    .mb-fs{
+        margin-top: 41px!important;
     }
 }
+
 
 /* Extra large devices (large desktops, 1200px and up) */
 
@@ -338,5 +374,13 @@ h1 .contact-header{
     .border-x-menu {
         padding-left: 8.125rem!important;
         padding-right: 8.125rem!important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .imgs-resize3{
+        width: 75%;
+        padding-left: 2rem;
+        padding-top: 1rem;
     }
 }
