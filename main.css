@@ -242,6 +242,10 @@ h1 .contact-header {
         padding-top: 1rem;
     }
 
+    .border-x-menu {
+        padding-left: 0.7rem!important;
+        padding-right: 0.7rem!important;
+    }
 }
 
 
@@ -262,6 +266,10 @@ h1 .contact-header {
     }
     .extra-pd-1{
         padding-top: 1rem;
+    }
+    .border-x-menu {
+        padding-left: 0.7rem!important;
+        padding-right: 0.7rem!important;
     }
 
 }
