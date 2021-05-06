@@ -1,6 +1,7 @@
 /* Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Playfair+Display:wght@700;800&display=swap');
 /*Overridden Styles*/
 
@@ -86,7 +87,7 @@ header nav ul li a:hover {
     padding-top: 35px;
     line-height: 50px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22.5px;
     float: left;
 }
 
@@ -96,8 +97,9 @@ header nav ul li a:hover {
 }
 
 .em-header {
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 900;
+    letter-spacing: 3px;
 }
 
 .proj-header {
@@ -250,6 +252,18 @@ h1 .contact-header {
     .list-in {
         padding-left: 1.9rem;
     }
+    .em-logo a {
+        margin-top: -28.3px;
+    }
+    .menu-toggle-exit {
+        margin-top: 1.5px;
+        margin-right: 0.2rem;
+    }
+    .toggle-exit {
+        padding-top: 75px;
+        text-transform: uppercase;
+    }
+   
 }
 
 
@@ -281,8 +295,16 @@ h1 .contact-header {
     .list-in {
         padding-left: 1.9rem;
     }
+    .em-logo a {
+        margin-top: -28.4px;
+    }
+    .menu-toggle-exit {
+        margin-top: 1.5px;
+        margin-right: 0.2rem;
+    }
 
 }
+
 
 
 /* Medium devices (tablets, 768px and up) */
@@ -326,6 +348,13 @@ h1 .contact-header {
     .list-in {
         padding-left: 1.05rem;
     }
+    .em-logo a {
+        line-height: 109px;
+    }
+    .menu-toggle-exit {
+        margin-top: -1px;
+        margin-right: 1.5rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -335,11 +364,13 @@ h1 .contact-header {
     .menu-toggle {
         padding-top: 5px;
     }
-    .em-logo a {
-        padding-top: 5px;
-    }
+    
     .menu-toggle-exit {
         padding-top: 5px;
+    }
+    .toggle-exit {
+        padding-top: 75px;
+        text-transform: uppercase;
     }
 }
 
@@ -369,7 +400,7 @@ h1 .contact-header {
         padding-right: 1.5rem;
     }
     header nav ul {
-        padding-top: -0.5rem;
+        padding-top: -0.1rem;
         display: block;
         text-align: center;
     }
@@ -379,6 +410,10 @@ h1 .contact-header {
 
     .imgs-resize3 {
         display: none!important;
+    }
+    .toggle-exit {
+        padding-top: 75px;
+        text-transform: uppercase;
     }
 }
 
@@ -414,6 +449,13 @@ h1 .contact-header {
     .img-ors{
         width: 100%;
     }
+    .em-logo a {
+        line-height: 109px;
+    }
+    header nav ul li a {
+        margin-top: -2px;
+        font-size: 15px;
+    }
 }
 
 
@@ -433,6 +475,13 @@ h1 .contact-header {
         width: 85%;
     }
 
+    .em-logo a {
+        line-height: 109px;
+    }
+    header nav ul li a {
+        margin-top: -1px;
+    }
+
 }
 
 @media (min-width: 1400px) {
@@ -443,5 +492,8 @@ h1 .contact-header {
     }
     .img-ors{
         width: 80%;
+    }
+    header nav ul li a {
+        margin-top: -3px;
     }
 }
