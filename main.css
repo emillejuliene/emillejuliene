@@ -5,7 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Playfair+Display:wght@700;800&display=swap');
-
 /*Overridden Styles*/
 
 body {
@@ -37,12 +36,12 @@ header nav ul li a {
     padding-left: 50px;
     text-decoration: none;
     display: block;
+    letter-spacing: 0.8px!important;
 }
 
 strong {
     font-weight: 700;
 }
-
 
 /*Custom Styles*/
 
@@ -95,7 +94,6 @@ strong {
 .em-logo {
     font-size: 22.5px;
 }
-
 
 .em-menu {
     padding-top: 9px;
@@ -219,7 +217,7 @@ h1 .contact-header {
     font-size: 25px!important;
 }
 
-.contacts{
+.contacts {
     letter-spacing: 1px!important;
     color: #3C3C3C!important;
     font-size: 15px;
@@ -228,8 +226,22 @@ h1 .contact-header {
     font-weight: 400;
 }
 
-a:hover{
- color: #DEC33B;
+.contacts:hover {
+    color: #DEC33B!important;
+}
+
+a:hover {
+    color: #DEC33B;
+}
+
+.lp-space{
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+}
+
+.contact {
+    padding-top:1.7rem;
+    padding-bottom: 2rem;
 }
 
 /*Media Queries*/
@@ -249,20 +261,18 @@ a:hover{
     .imgs-resize3 {
         display: none!important;
     }
-    .center-im{
+    .center-im {
         padding-left: 20px!important;
     }
-
-    .center-im-1{
+    .center-im-1 {
         padding-left: 20px!important;
     }
     .extra-pd {
         padding-top: 2rem;
     }
-    .extra-pd-1{
+    .extra-pd-1 {
         padding-top: 1rem;
     }
-
     .border-x-menu {
         padding-left: 0.91rem!important;
         padding-right: 0.91rem!important;
@@ -281,9 +291,7 @@ a:hover{
         padding-top: 75px;
         text-transform: uppercase;
     }
-   
 }
-
 
 /* Small devices (landscape phones, 576px and up) */
 
@@ -293,17 +301,16 @@ a:hover{
         font-weight: 500;
         line-height: 2rem;
     }
-
-    .center-im{
+    .center-im {
         padding-left: 20px!important;
     }
-    .center-im-1{
+    .center-im-1 {
         padding-left: 20px!important;
     }
     .extra-pd {
         padding-top: 1.7rem;
     }
-    .extra-pd-1{
+    .extra-pd-1 {
         padding-top: 1rem;
     }
     .border-x-menu {
@@ -320,10 +327,7 @@ a:hover{
         margin-top: 1.5px;
         margin-right: 0.2rem;
     }
-
 }
-
-
 
 /* Medium devices (tablets, 768px and up) */
 
@@ -344,23 +348,19 @@ a:hover{
         width: 75%;
         align-items: baseline;
     }
-    .center-im-1{
+    .center-im-1 {
         padding-left: 20px!important;
     }
-    
     .extra-pd {
         padding-top: 1.9rem;
     }
-
-    .row{
-        --bs-gutter-x:0!important;
+    .row {
+        --bs-gutter-x: 0!important;
     }
-
-    .mb-fs{
+    .mb-fs {
         margin-top: 11px!important;
     }
-
-    .center-im{
+    .center-im {
         padding-left: 0px;
     }
     .list-in {
@@ -382,7 +382,6 @@ a:hover{
     .menu-toggle {
         padding-top: 5px;
     }
-    
     .menu-toggle-exit {
         padding-top: 5px;
     }
@@ -426,7 +425,9 @@ a:hover{
     header nav ul li a {
         padding: 2.5rem;
     }
-
+    header nav ul li a:hover {
+        color: #3C3C3C;
+    }
     .imgs-resize3 {
         display: none!important;
     }
@@ -435,8 +436,6 @@ a:hover{
         text-transform: uppercase;
     }
 }
-
-    
 
 /* Large devices (desktops, 992px and up) */
 
@@ -459,13 +458,13 @@ a:hover{
         padding-left: 1rem;
         padding-top: 2rem;
     }
-    .row{
-        --bs-gutter-x:0!important;
+    .row {
+        --bs-gutter-x: 0!important;
     }
-    .mb-fs{
+    .mb-fs {
         margin-top: 41px!important;
     }
-    .img-ors{
+    .img-ors {
         width: 100%;
     }
     .em-logo a {
@@ -475,21 +474,20 @@ a:hover{
         margin-top: -2px;
         font-size: 15px;
     }
-    .lpt{
+    .lpt {
         font-family: 'Playfair Display', serif;
         font-size: 30px!important;
         font-weight: 900;
         letter-spacing: 0.5px;
         line-height: 30px;
     }
-    .lpt-1{
+    .lpt-1 {
         font-family: 'Playfair Display', serif;
         font-size: 30px!important;
         font-weight: 400;
         letter-spacing: 0.5px;
     }
 }
-
 
 /* Extra large devices (large desktops, 1200px and up) */
 
@@ -502,27 +500,24 @@ a:hover{
         padding-left: 8.45rem!important;
         padding-right: 8.45rem!important;
     }
-
-    .img-ors{
+    .img-ors {
         width: 85%;
     }
-
     .em-logo a {
         line-height: 109px;
     }
     header nav ul li a {
         margin-top: -1px;
     }
-
 }
 
 @media (min-width: 1400px) {
-    .imgs-resize3{
+    .imgs-resize3 {
         width: 75%;
         padding-left: 2rem;
         padding-top: 1rem;
     }
-    .img-ors{
+    .img-ors {
         width: 80%;
     }
     header nav ul li a {
