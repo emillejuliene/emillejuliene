@@ -2,7 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Playfair+Display:wght@700;800&display=swap');
+
 /*Overridden Styles*/
 
 body {
@@ -36,18 +39,16 @@ header nav ul li a {
     display: block;
 }
 
-header nav ul li a:hover {
-    font-weight: 600;
-    color: #1D1D1D;
-}
-
-
-.border {
-    border-color: #B3B3B3!important;
+strong {
+    font-weight: 700;
 }
 
 
 /*Custom Styles*/
+
+.border {
+    border-color: #B3B3B3!important;
+}
 
 .imgs-fluid {
     max-width: 100%;
@@ -225,7 +226,7 @@ h1 .contact-header {
 @media (max-width: 575px) {
     .cs-text {
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 2rem;
     }
     .imgs-resize3 {
@@ -315,7 +316,7 @@ h1 .contact-header {
     }
     .cs-text {
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 2rem;
     }
     .imgs-resize {
@@ -424,7 +425,7 @@ h1 .contact-header {
 @media (min-width: 992px) {
     .cs-text {
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 2rem;
     }
     .border-x {
@@ -455,6 +456,19 @@ h1 .contact-header {
     header nav ul li a {
         margin-top: -2px;
         font-size: 15px;
+    }
+    .lpt{
+        font-family: 'Playfair Display', serif;
+        font-size: 30px!important;
+        font-weight: 900;
+        letter-spacing: 0.5px;
+        line-height: 30px;
+    }
+    .lpt-1{
+        font-family: 'Playfair Display', serif;
+        font-size: 30px!important;
+        font-weight: 400;
+        letter-spacing: 0.5px;
     }
 }
 
