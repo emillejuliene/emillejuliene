@@ -151,9 +151,10 @@ strong {
 
 .cs-h1 {
     font-family: 'Heebo', sans-serif;
-    font-size: 12.5px;
+    font-size: 12px;
     color: #3C3C3C;
     letter-spacing: 2px;
+    font-weight: 400;
 }
 
 .cs-h1::before {
@@ -173,22 +174,6 @@ strong {
 
 .ff-cs-h1::before {
     background: #FAFAFA!important;
-}
-
-.roles-hdr {
-    font-family: 'Heebo', sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-    color: #3C3C3C;
-    letter-spacing: 1px;
-}
-
-.roles {
-    list-style-type: none!important;
-    font-size: 14px;
-    font-weight: 350;
-    padding-left: 0;
-    line-height: 1.7rem;
 }
 
 .ff-cs {
@@ -254,9 +239,27 @@ a:hover {
 
 @media (max-width: 575px) {
     .cs-text {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 400;
-        line-height: 2rem;
+        line-height: 1.7rem;
+        letter-spacing: 0.2px;
+    }
+
+    .roles-hdr {
+        font-family: 'Heebo', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        color: #3C3C3C;
+        letter-spacing: 1px;
+    }
+
+    .roles {
+        list-style-type: none!important;
+        font-size: 12px;
+        font-weight: 350;
+        padding-left: 0;
+        letter-spacing: 0.2px;
+        line-height: 1.7rem;
     }
 
     .border-x {
@@ -340,8 +343,27 @@ a:hover {
     .cs-text {
         font-size: 14px;
         font-weight: 400;
+        letter-spacing: 0.2px;
         line-height: 2rem;
     }
+
+    .roles-hdr {
+        font-family: 'Heebo', sans-serif;
+        font-size: 15px;
+        font-weight: 800;
+        color: #3C3C3C;
+        letter-spacing: 1px;
+    }
+
+    .roles {
+        list-style-type: none!important;
+        font-size: 14px;
+        font-weight: 350;
+        padding-left: 0;
+        letter-spacing: 0.2px;
+        line-height: 2rem;
+    }
+
     .border-x {
         padding-left: 1.63rem!important;
         padding-right: 1.63rem!important;
@@ -419,10 +441,17 @@ a:hover {
         padding-right: 1.63rem!important;
     }
     .cs-text {
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 400;
+        letter-spacing: 0.2px;
         line-height: 2rem;
     }
+
+    .my-role{
+        padding-top: 0.8rem!important;
+    }
+
+    
     .imgs-resize {
         width: 70%;
         align-items: baseline;
@@ -557,10 +586,21 @@ a:hover {
 
 @media (min-width: 992px) {
     .cs-text {
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 400;
+        letter-spacing: 0.2px;
+        line-height: 2.2rem;
+    }
+
+    .roles {
+        list-style-type: none!important;
+        font-size: 13.5px;
+        font-weight: 350;
+        padding-left: 0;
+        letter-spacing: 0.2px;
         line-height: 2rem;
     }
+
     .border-x {
         padding-left: 9.2rem!important;
         padding-right: 9.2rem!important;
@@ -641,6 +681,23 @@ a:hover {
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
+
+    .cs-text {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        line-height: 2.4rem;
+    }
+
+    .roles {
+        list-style-type: none!important;
+        font-size: 15px;
+        font-weight: 350;
+        padding-left: 0;
+        letter-spacing: 0.2px;
+        line-height: 2rem;
+    }
+
     .border-x {
         padding-left: 9.2rem!important;
         padding-right: 9.2rem!important;
