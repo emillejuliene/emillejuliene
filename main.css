@@ -234,6 +234,10 @@ a:hover {
     color: #DEC33B;
 }
 
+.em-logo a:hover {
+    color: #3C3C3C;
+}
+
 
 .hover-opacity:hover {
     opacity:  85%;
@@ -279,6 +283,8 @@ a:hover {
     .em-logo a {
         margin-top: -28.3px;
     }
+
+    
     .menu-toggle-exit {
         margin-top: 1.5px;
         margin-right: 0.2rem;
