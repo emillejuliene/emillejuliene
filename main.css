@@ -237,6 +237,7 @@ a:hover {
     background-color: #FAFAFA!important;
 }
 
+
 /*Media Queries*/
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -246,6 +247,9 @@ a:hover {
 /* Extra small devices */
 
 @media (max-width: 575px) {
+    .h3, h3 {
+        font-size: calc(1.2rem + .2rem)!important;
+    }
     .cs-text {
         font-size: 12px;
         font-weight: 400;
@@ -344,6 +348,7 @@ a:hover {
         padding-top: 0.5rem;
         padding-bottom: 1.5rem;
     }
+    
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -440,6 +445,10 @@ a:hover {
         padding-top: 0.5rem;
         padding-bottom: 1.7rem;
     }
+    .h3, h3 {
+        font-size: calc(1.2rem + .2vw)!important;
+    }
+    
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -535,6 +544,10 @@ a:hover {
         padding-bottom: 3.5rem;
         padding-left: 40px;
     }
+    .h3, h3 {
+        font-size: calc(1.2rem + .4vw)!important;
+    }
+    
 }
 
 @media (max-width: 767px) {
@@ -696,6 +709,14 @@ a:hover {
         padding-bottom: 4.8rem;
         padding-left: 50px;
     }
+
+    .ilus{
+        padding-left: 50px!important;
+        width: 100%;
+    }
+    .h3, h3 {
+        font-size: calc(1.2rem + .6vw)!important;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -773,6 +794,11 @@ a:hover {
         padding-bottom: 3.8rem;
         padding-left: 60px;
     }
+
+    .ilus{
+        padding-left: 50px!important;
+        width: 100%;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -800,5 +826,10 @@ a:hover {
         padding-top: 4rem;
         padding-bottom: 3rem;
         padding-left: 100px;
+    }
+
+    .ilus{
+        padding-left: 50px!important;
+        width: 90%;
     }
 }
