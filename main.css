@@ -176,9 +176,14 @@ strong {
     background: #FAFAFA!important;
 }
 
-.ff-cs {
+.ff {
     background-color: #FFF1A6;
 }
+
+.mndz {
+    background-color: #ffbbb7bd;
+}
+
 
 .ff-cs1 {
     background-color: #285C94;
@@ -223,13 +228,12 @@ a:hover {
     color: #3C3C3C;
 }
 
-
 .hover-opacity:hover {
-    opacity:  85%;
+    opacity: 85%;
     transition: 0.5s;
 }
 
-.prob{
+.prob {
     background-color: #FAFAFA!important;
 }
 
@@ -248,7 +252,6 @@ a:hover {
         line-height: 1.7rem;
         letter-spacing: 0.2px;
     }
-
     .roles-hdr {
         font-family: 'Heebo', sans-serif;
         font-size: 14px;
@@ -256,7 +259,6 @@ a:hover {
         color: #3C3C3C;
         letter-spacing: 1px;
     }
-
     .roles {
         list-style-type: none!important;
         font-size: 12px;
@@ -265,7 +267,6 @@ a:hover {
         letter-spacing: 0.2px;
         line-height: 1.7rem;
     }
-
     .border-x {
         padding-left: 1.62rem!important;
         padding-right: 1.62rem!important;
@@ -274,9 +275,6 @@ a:hover {
         display: none!important;
     }
     .center-im {
-        padding-left: 20px!important;
-    }
-    .center-im-1 {
         padding-left: 20px!important;
     }
     .extra-pd {
@@ -290,13 +288,11 @@ a:hover {
         padding-right: 0.91rem!important;
     }
     .list-in {
-        padding-left: 1.9rem;
+        padding-left: 1.75rem;
     }
     .em-logo a {
         margin-top: -28.3px;
     }
-
-    
     .menu-toggle-exit {
         margin-top: 1.5px;
         margin-right: 0.2rem;
@@ -305,7 +301,6 @@ a:hover {
         padding-top: 75px;
         text-transform: uppercase;
     }
-
     .fp {
         letter-spacing: 0.8px;
         font-weight: 400;
@@ -314,7 +309,6 @@ a:hover {
         padding-top: 1rem;
         font-size: 12px;
     }
-    
     .fp::before {
         content: '';
         display: inline-block;
@@ -325,19 +319,30 @@ a:hover {
         margin-top: 8.7px;
         margin-right: 10px;
     }
-
     .contact {
         padding-top: 1.7rem;
         padding-bottom: 2.2rem;
     }
-
-    .contacts{
+    .contacts {
         font-size: 12px;
     }
-
     .lp-space {
         padding-top: 5.7rem;
         padding-bottom: 1.8rem;
+    }
+    .row {
+        --bs-gutter-x: 0;
+    }
+    .text-jstfy {
+        text-align: justify;
+    }
+    .img-ors {
+        width: 70%;
+    }
+    .mndz-o{
+        width: 100%;
+        padding-top: 0.5rem;
+        padding-bottom: 1.5rem;
     }
 }
 
@@ -350,7 +355,6 @@ a:hover {
         letter-spacing: 0.2px;
         line-height: 2rem;
     }
-
     .roles-hdr {
         font-family: 'Heebo', sans-serif;
         font-size: 15px;
@@ -358,7 +362,6 @@ a:hover {
         color: #3C3C3C;
         letter-spacing: 1px;
     }
-
     .roles {
         list-style-type: none!important;
         font-size: 14px;
@@ -367,15 +370,11 @@ a:hover {
         letter-spacing: 0.2px;
         line-height: 2rem;
     }
-
     .border-x {
         padding-left: 1.63rem!important;
         padding-right: 1.63rem!important;
     }
     .center-im {
-        padding-left: 20px!important;
-    }
-    .center-im-1 {
         padding-left: 20px!important;
     }
     .extra-pd {
@@ -389,7 +388,7 @@ a:hover {
         padding-right: 0.9rem!important;
     }
     .list-in {
-        padding-left: 1.9rem;
+        padding-left: 1.8rem;
     }
     .em-logo a {
         margin-top: -28.4px;
@@ -406,7 +405,6 @@ a:hover {
         padding-top: 1rem;
         font-size: 14px;
     }
-    
     .fp::before {
         content: '';
         display: inline-block;
@@ -417,19 +415,30 @@ a:hover {
         margin-top: 10px;
         margin-right: 10px;
     }
-
     .contact {
         padding-top: 1.7rem;
         padding-bottom: 2.2rem;
     }
-
-    .contacts{
+    .contacts {
         font-size: 14px;
     }
-
     .lp-space {
         padding-top: 5.2rem;
         padding-bottom: 2.7rem;
+    }
+    .row {
+        --bs-gutter-x: 0;
+    }
+    .text-jstfy {
+        text-align: justify;
+    }
+    .img-ors {
+        width: 70%;
+    }
+    .mndz-o{
+        width: 100%;
+        padding-top: 0.5rem;
+        padding-bottom: 1.7rem;
     }
 }
 
@@ -439,7 +448,6 @@ a:hover {
     .border-section {
         max-width: 900px;
     }
-
     .border-x {
         padding-left: 1.63rem!important;
         padding-right: 1.63rem!important;
@@ -450,12 +458,9 @@ a:hover {
         letter-spacing: 0.2px;
         line-height: 2rem;
     }
-
-    .my-role{
+    .my-role {
         padding-top: 0.8rem!important;
     }
-
-    
     .imgs-resize {
         width: 70%;
         align-items: baseline;
@@ -465,7 +470,7 @@ a:hover {
         align-items: baseline;
     }
     .center-im-1 {
-        padding-left: 20px!important;
+        padding-left: 30px!important;
     }
     .extra-pd {
         padding-top: 1.9rem;
@@ -474,7 +479,7 @@ a:hover {
         --bs-gutter-x: 0!important;
     }
     .mb-fs {
-        margin-top: 11px!important;
+        margin-top: 23px!important;
     }
     .center-im {
         padding-left: 0px;
@@ -497,7 +502,6 @@ a:hover {
         padding-top: 1rem;
         font-size: 14px;
     }
-    
     .fp::before {
         content: '';
         display: inline-block;
@@ -508,19 +512,28 @@ a:hover {
         margin-top: 10px;
         margin-right: 10px;
     }
-
     .contact {
         padding-top: 1.7rem;
         padding-bottom: 2.2rem;
     }
-
-    .contacts{
+    .contacts {
         font-size: 14px;
     }
-
     .lp-space {
         padding-top: 7rem;
         padding-bottom: 2.2rem;
+    }
+    .text-jstfy {
+        text-align: justify;
+    }
+    .img-ors {
+        width: 95%;
+    }
+    .mndz-o{
+        width: 100%;
+        padding-top: 3.1rem;
+        padding-bottom: 3.5rem;
+        padding-left: 40px;
     }
 }
 
@@ -595,7 +608,6 @@ a:hover {
         letter-spacing: 0.2px;
         line-height: 2.2rem;
     }
-
     .roles {
         list-style-type: none!important;
         font-size: 13.5px;
@@ -604,7 +616,6 @@ a:hover {
         letter-spacing: 0.2px;
         line-height: 2rem;
     }
-
     .border-x {
         padding-left: 9.2rem!important;
         padding-right: 9.2rem!important;
@@ -622,7 +633,10 @@ a:hover {
         --bs-gutter-x: 0!important;
     }
     .mb-fs {
-        margin-top: 41px!important;
+        margin-top: 48px!important;
+    }
+    .center-im-1 {
+        padding-left: 40px!important;
     }
     .img-ors {
         width: 100%;
@@ -655,7 +669,6 @@ a:hover {
         padding-top: 1rem;
         font-size: 16px;
     }
-    
     .fp::before {
         content: '';
         display: inline-block;
@@ -666,33 +679,34 @@ a:hover {
         margin-top: 11.5px;
         margin-right: 10px;
     }
-
     .contact {
         padding-top: 1.7rem;
         padding-bottom: 2.2rem;
     }
-
-    .contacts{
+    .contacts {
         font-size: 16px;
     }
-
     .lp-space {
         padding-top: 7rem;
         padding-bottom: 2.2rem;
+    }
+    .mndz-o{
+        width: 100%;
+        padding-top: 4.4rem;
+        padding-bottom: 4.8rem;
+        padding-left: 50px;
     }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
-
     .cs-text {
         font-size: 16px;
         font-weight: 400;
         letter-spacing: 0.2px;
         line-height: 2.4rem;
     }
-
     .roles {
         list-style-type: none!important;
         font-size: 15px;
@@ -701,7 +715,6 @@ a:hover {
         letter-spacing: 0.2px;
         line-height: 2rem;
     }
-
     .border-x {
         padding-left: 9.2rem!important;
         padding-right: 9.2rem!important;
@@ -711,7 +724,13 @@ a:hover {
         padding-right: 8.45rem!important;
     }
     .img-ors {
-        width: 85%;
+        width: 95%;
+    }
+    .mb-fs {
+        margin-top: 31px!important;
+    }
+    .center-im-1 {
+        padding-left: 50px!important;
     }
     .em-logo a {
         line-height: 109px;
@@ -727,7 +746,6 @@ a:hover {
         padding-top: 1rem;
         font-size: 16px;
     }
-    
     .fp::before {
         content: '';
         display: inline-block;
@@ -738,19 +756,22 @@ a:hover {
         margin-top: 11.5px;
         margin-right: 10px;
     }
-
     .contact {
         padding-top: 1.7rem;
         padding-bottom: 2.2rem;
     }
-
-    .contacts{
+    .contacts {
         font-size: 16px;
     }
-
     .lp-space {
         padding-top: 7rem;
         padding-bottom: 2.2rem;
+    }
+    .mndz-o{
+        width: 100%;
+        padding-top: 4.3rem;
+        padding-bottom: 3.8rem;
+        padding-left: 60px;
     }
 }
 
@@ -761,9 +782,23 @@ a:hover {
         padding-top: 1rem;
     }
     .img-ors {
-        width: 80%;
+        width: 95%;
     }
     header nav ul li a {
         margin-top: -3px;
+    }
+
+    .mb-fs {
+        margin-top: 37px!important;
+    }
+    .center-im-1 {
+        padding-left: 40px!important;
+    }
+
+    .mndz-o{
+        width: 100%;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+        padding-left: 100px;
     }
 }
