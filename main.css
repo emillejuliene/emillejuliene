@@ -229,6 +229,10 @@ a:hover {
     transition: 0.5s;
 }
 
+.prob{
+    background-color: #FAFAFA!important;
+}
+
 /*Media Queries*/
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -476,7 +480,7 @@ a:hover {
         padding-left: 0px;
     }
     .list-in {
-        padding-left: 1.05rem;
+        padding-left: 1.15rem;
     }
     .em-logo a {
         line-height: 109px;
