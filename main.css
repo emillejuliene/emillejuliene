@@ -224,6 +224,14 @@ a:hover {
     color: #DEC33B;
 }
 
+#fast-f :hover{
+    color: #947e00!important;
+}
+
+#mndz-s :hover {
+    color: #c00030!important;
+}
+
 .em-logo a:hover {
     color: #3C3C3C;
 }
