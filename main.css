@@ -210,9 +210,9 @@ h1 .contact-header {
 .contacts {
     letter-spacing: 1px!important;
     color: #3C3C3C!important;
-    font-size: 15px;
-    padding-left: 7px;
-    padding-right: 7px;
+    font-size: 40px;
+    padding-left: 11px;
+    padding-right: 11px;
     font-weight: 400;
 }
 
@@ -333,10 +333,10 @@ a:hover {
     }
     .contact {
         padding-top: 1.7rem;
-        padding-bottom: 2.2rem;
+        padding-bottom: 3rem;
     }
     .contacts {
-        font-size: 12px;
+        font-size: 40px;
     }
     .lp-space {
         padding-top: 5.7rem;
@@ -430,10 +430,10 @@ a:hover {
     }
     .contact {
         padding-top: 1.7rem;
-        padding-bottom: 2.2rem;
+        padding-bottom: 3rem;
     }
     .contacts {
-        font-size: 14px;
+        font-size: 40px;
     }
     .lp-space {
         padding-top: 5.2rem;
@@ -531,10 +531,10 @@ a:hover {
     }
     .contact {
         padding-top: 1.7rem;
-        padding-bottom: 2.2rem;
+        padding-bottom: 3rem;
     }
     .contacts {
-        font-size: 14px;
+        font-size: 40px;
     }
     .lp-space {
         padding-top: 7rem;
@@ -702,10 +702,10 @@ a:hover {
     }
     .contact {
         padding-top: 1.7rem;
-        padding-bottom: 2.2rem;
+        padding-bottom: 3rem;
     }
     .contacts {
-        font-size: 16px;
+        font-size: 40px;
     }
     .lp-space {
         padding-top: 7rem;
@@ -787,10 +787,10 @@ a:hover {
     }
     .contact {
         padding-top: 1.7rem;
-        padding-bottom: 2.2rem;
+        padding-bottom: 3rem;
     }
     .contacts {
-        font-size: 16px;
+        font-size: 40px;
     }
     .lp-space {
         padding-top: 7rem;
@@ -840,5 +840,10 @@ a:hover {
         padding-left: 50px!important;
         width: 90%;
     }
+
+    .contacts {
+        font-size: 43px;
+    }
 }
+
 
