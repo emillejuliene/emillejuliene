@@ -810,6 +810,11 @@ a:hover {
         padding-left: 50px!important;
         width: 100%;
     }
+    
+    .new-line{
+        content: '\A';
+        white-space: pre;
+    }
 }
 
 @media (min-width: 1400px) {
