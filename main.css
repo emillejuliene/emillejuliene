@@ -210,9 +210,9 @@ h1 .contact-header {
 .contacts {
     letter-spacing: 1px!important;
     color: #3C3C3C!important;
-    font-size: 40px;
-    padding-left: 11px;
-    padding-right: 11px;
+    font-size: 30px;
+    padding-left: 5px;
+    padding-right: 8px;
     font-weight: 400;
 }
 
@@ -243,6 +243,18 @@ a:hover {
 
 .prob {
     background-color: #FAFAFA!important;
+}
+
+.contact-spn{
+    color: #3C3C3C;
+    height: 50px;
+    padding-top: 22px;
+    line-height: 60px;
+    text-decoration: none;
+    font-size: 22.5px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
 
@@ -336,7 +348,9 @@ a:hover {
         padding-bottom: 3rem;
     }
     .contacts {
-        font-size: 40px;
+        font-size: 30px;
+        padding-left: 3px;
+        padding-right: 8px;
     }
     .lp-space {
         padding-top: 5.7rem;
@@ -433,7 +447,9 @@ a:hover {
         padding-bottom: 3rem;
     }
     .contacts {
-        font-size: 40px;
+        font-size: 30px;
+        padding-left: 4px;
+        padding-right: 8px;
     }
     .lp-space {
         padding-top: 5.2rem;
@@ -534,7 +550,9 @@ a:hover {
         padding-bottom: 3rem;
     }
     .contacts {
-        font-size: 40px;
+        font-size: 30px;
+        padding-left: 3.5px;
+        padding-right: 8px;
     }
     .lp-space {
         padding-top: 7rem;
@@ -708,7 +726,9 @@ a:hover {
         padding-bottom: 3rem;
     }
     .contacts {
-        font-size: 40px;
+        font-size: 30px;
+        padding-left: 4px;
+        padding-right: 8px;
     }
     .lp-space {
         padding-top: 7rem;
@@ -793,7 +813,9 @@ a:hover {
         padding-bottom: 3rem;
     }
     .contacts {
-        font-size: 40px;
+        font-size: 30px;
+        padding-left: 4.5px;
+        padding-right: 8px;
     }
     .lp-space {
         padding-top: 7rem;
@@ -850,8 +872,13 @@ a:hover {
     }
 
     .contacts {
-        font-size: 43px;
+        font-size: 30px;
+        padding-left: 4.5px;
+        padding-right: 8px;
     }
 }
 
-
+/*Other*/ 
+.contact-desc{
+    margin-bottom: 3px!important;
+}
