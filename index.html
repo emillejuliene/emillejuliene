@@ -7,16 +7,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --sunrays:  #F2B800;
-      --lime:     #7FB800;
-      --blaze:    #D94E0A;
-      --hotpink:  #D4215E;
-      --skyblue:  #0FA3C4;
+      --sunrays:  #F5C842;
+      --lime:     #A8C037;
+      --blaze:    #E86A1A;
+      --hotpink:  #E0457B;
+      --skyblue:  #4DB8D4;
       --blush:    #F2D6CE;
       --cream:    #FAF6F1;
       --ink:      #2C2825;
       --muted:    #7A6E68;
-      --accent:   #D94E0A;
+      --accent:   #C4856A;
       --white:    #FFFFFF;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -60,11 +60,11 @@
     #hero { min-height: 100vh; display: flex; align-items: center; padding: 6rem 5vw 4rem; position: relative; overflow: hidden; }
     .hero-bg { position: absolute; inset: 0; z-index: 0; }
     .blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: .55; }
-    .blob-1 { width: 520px; height: 520px; background: #F2B80080;    top: -100px; right: -80px; animation: drift 12s ease-in-out infinite alternate; }
-    .blob-2 { width: 380px; height: 380px; background: #0FA3C480; bottom: 0; left: -60px;    animation: drift 16s ease-in-out infinite alternate-reverse; }
-    .blob-3 { width: 260px; height: 260px; background: #7FB80080;     top: 40%; right: 25%;      animation: drift 10s ease-in-out infinite alternate; }
+    .blob-1 { width: 520px; height: 520px; background: #E8457A70;    top: -100px; right: -80px; animation: drift 12s ease-in-out infinite alternate; }
+    .blob-2 { width: 380px; height: 380px; background: #4DB8D470; bottom: 0; left: -60px;    animation: drift 16s ease-in-out infinite alternate-reverse; }
+    .blob-3 { width: 260px; height: 260px; background: #A8C03760;     top: 40%; right: 25%;      animation: drift 10s ease-in-out infinite alternate; }
     .hero-content { position: relative; z-index: 1; max-width: 700px; animation: fadeUp 1s ease both; }
-    .hero-tag { display: inline-block; background: #FEF0B0; color: var(--blaze); font-size: .75rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; padding: .35rem .9rem; border-radius: 100px; margin-bottom: 1.5rem; }
+    .hero-tag { display: inline-block; background: #FACCD8; color: var(--hotpink); font-size: .75rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; padding: .35rem .9rem; border-radius: 100px; margin-bottom: 1.5rem; }
     .hero-name {
       font-family: 'Playfair Display', serif;
       font-size: clamp(2.6rem,6vw,5rem); line-height: 1.12; margin-bottom: 1.2rem;
@@ -161,12 +161,12 @@
       background: rgba(44,40,37,.15); border: none; cursor: pointer;
       transition: background .2s, width .2s; padding: 0;
     }
-    .carousel-dot.active { background: var(--blaze); width: 24px; border-radius: 4px; }
+    .carousel-dot.active { background: var(--hotpink); width: 24px; border-radius: 4px; }
     .case-visual { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; min-height: 280px; }
-    .cv-blush    { background: linear-gradient(135deg,#F2B800,#F5CE3A); }
-    .cv-sage     { background: linear-gradient(135deg,#7FB800,#A8D020); }
-    .cv-lavender { background: linear-gradient(135deg,#D4215E,#E8447A); }
-    .cv-sky     { background: linear-gradient(135deg,#0FA3C4,#2DC0E0); }
+    .cv-blush    { background: linear-gradient(135deg,#E8457A,#F06898); }
+    .cv-sage     { background: linear-gradient(135deg,#A8C037,#C4D840); }
+    .cv-lavender { background: linear-gradient(135deg,#F2B800,#F5CC30); }
+    .cv-sky     { background: linear-gradient(135deg,#4DB8D4,#70CCE0); }
     .ct-sky      { background: #7AD8F0; color: #004E60; }
     .case-mockup { width: 68%; aspect-ratio: 4/3; background: rgba(255,255,255,.6); border-radius: 12px; box-shadow: 0 8px 32px rgba(44,40,37,.12); backdrop-filter: blur(4px); display: flex; flex-direction: column; padding: 1.1rem; gap: .5rem; }
     .mock-bar { height: 7px; border-radius: 4px; background: rgba(44,40,37,.15); }
@@ -175,14 +175,14 @@
     .mock-box { flex: 1; height: 44px; border-radius: 8px; background: rgba(44,40,37,.08); }
     .case-info { padding: 2.8rem 3rem 2.8rem 3.2rem; display: flex; flex-direction: column; justify-content: center; }
     .case-tag { display: inline-block; font-size: .7rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; padding: .28rem .7rem; border-radius: 100px; margin-bottom: 1rem; }
-    .ct-blush    { background: #FDE87A; color: #5C4200; }
+    .ct-blush    { background: #FAB8D0; color: #7A0040; }
     .ct-sage     { background: #C4E060; color: #2A4000; }
-    .ct-lavender { background: #F888B8; color: #6B0030; }
+    .ct-lavender { background: #FDE87A; color: #5C4200; }
     .case-info h3 { font-family: 'Playfair Display', serif; font-size: 1.45rem; line-height: 1.25; margin-bottom: .75rem; }
     .case-info p  { color: var(--muted); font-size: .9rem; font-weight: 300; margin-bottom: 1.6rem; line-height: 1.6; }
     .case-meta { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.6rem; }
     .case-pill { font-size: .73rem; color: var(--muted); background: rgba(44,40,37,.06); padding: .22rem .7rem; border-radius: 100px; }
-    .case-link { display: inline-flex; align-items: center; gap: .4rem; font-size: .85rem; font-weight: 500; color: var(--accent); transition: gap .2s; }
+    .case-link { display: inline-flex; align-items: center; gap: .4rem; font-size: .85rem; font-weight: 500; color: var(--hotpink); transition: gap .2s; }
     .case-link:hover { gap: .7rem; }
 
     /* ── CASE STUDY PAGE ── */
@@ -208,9 +208,9 @@
     .cs-stat .big  { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--accent); display: block; line-height: 1; }
     .cs-stat .desc { font-size: .78rem; color: var(--muted); margin-top: .4rem; line-height: 1.4; }
     .cs-img { width: 100%; aspect-ratio: 16/9; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 1.8rem 0; font-size: .8rem; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
-    .cs-img.blush    { background: linear-gradient(135deg,#F2B800,#F5CE3A); }
-    .cs-img.sage     { background: linear-gradient(135deg,#7FB800,#A8D020); }
-    .cs-img.lavender { background: linear-gradient(135deg,#D4215E,#E8447A); }
+    .cs-img.blush    { background: linear-gradient(135deg,#E8457A,#F06898); }
+    .cs-img.sage     { background: linear-gradient(135deg,#A8C037,#C8D84A); }
+    .cs-img.lavender { background: linear-gradient(135deg,#F2B800,#F5CC30); }
     .cs-steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; margin: 1.8rem 0; }
     .cs-step { background: var(--white); border-radius: 14px; padding: 1.3rem 1.1rem; text-align: center; border: 1px solid rgba(44,40,37,.06); }
     .cs-step .snum { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--accent); display: block; }
@@ -235,7 +235,7 @@
       letter-spacing: .02em;
     }
     .tab-btn:hover { color: var(--ink); }
-    .tab-btn.active { color: var(--blaze); border-bottom-color: var(--blaze); }
+    .tab-btn.active { color: var(--hotpink); border-bottom-color: var(--hotpink); }
     .tab-panel { display: none; animation: fadeUp .4s ease both; }
     .tab-panel.active { display: block; padding-bottom: 2rem; }
 
@@ -248,34 +248,34 @@
 
     /* Skills tab */
     .skills-tab-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; padding: .5rem 0; }
-    .skill-category h4 { font-family: 'Playfair Display', serif; font-size: 1rem; margin-bottom: 1rem; padding-bottom: .5rem; border-bottom: 1.5px solid var(--sunrays); }
+    .skill-category h4 { font-family: 'Playfair Display', serif; font-size: 1rem; margin-bottom: 1rem; padding-bottom: .5rem; border-bottom: 1.5px solid var(--hotpink); }
     .skill-tags-row { display: flex; flex-wrap: wrap; gap: .5rem; }
     .skill-chip { background: var(--cream); border: 1px solid rgba(196,133,106,.25); color: var(--ink); font-size: .78rem; padding: .3rem .8rem; border-radius: 100px; }
-    .about-photo-wrap { width: 100%; aspect-ratio: 4/5; border-radius: 24px; background: linear-gradient(160deg,#F2B800 0%,#0FA3C4 100%); position: relative; overflow: hidden; display: flex; align-items: flex-end; justify-content: center; }
+    .about-photo-wrap { width: 100%; aspect-ratio: 4/5; border-radius: 24px; background: linear-gradient(160deg,#E8457A 0%,#4DB8D4 100%); position: relative; overflow: hidden; display: flex; align-items: flex-end; justify-content: center; }
     .about-photo-placeholder { width: 68%; aspect-ratio: 1; border-radius: 50%; background: rgba(255,255,255,.45); margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
     .about-visual { position: relative; min-width: 0; }
-    .about-badge { position: absolute; bottom: 12px; right: 12px; background: #FDE87A; border-radius: 16px; padding: 1rem 1.3rem; box-shadow: 0 8px 24px rgba(44,40,37,.1); }
+    .about-badge { position: absolute; bottom: 12px; right: 12px; background: #FAC0D4; border-radius: 16px; padding: 1rem 1.3rem; box-shadow: 0 8px 24px rgba(44,40,37,.1); }
     .about-badge .num { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--accent); display: block; line-height: 1; }
     .about-badge .label { font-size: .7rem; color: var(--muted); font-weight: 500; }
     .about-body { color: var(--muted); font-weight: 300; line-height: 1.8; margin-bottom: 2rem; }
     .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; margin-bottom: 2.4rem; }
     .skill-item { display: flex; align-items: center; gap: .55rem; font-size: .87rem; }
     .skill-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-    .sd-blush    { background: var(--blaze); }
+    .sd-blush    { background: var(--hotpink); }
     .sd-sage     { background: var(--lime); }
-    .sd-lavender { background: var(--hotpink); }
-    .sd-sky      { background: var(--skyblue); }
+    .sd-lavender { background: var(--skyblue); }
+    .sd-sky      { background: var(--sunrays); }
 
     /* ── RESUME ── */
     #resume { background: var(--white); }
     .resume-exp-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; align-items: start; }
     .testimonials-section { margin-top: 3.5rem; }
-    .testimonials-section h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; margin-bottom: 1.6rem; padding-bottom: .55rem; border-bottom: 1.5px solid var(--sunrays); }
+    .testimonials-section h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; margin-bottom: 1.6rem; padding-bottom: .55rem; border-bottom: 1.5px solid var(--hotpink); }
     .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
     .testimonial-card { background: var(--cream); border-radius: 16px; padding: 1.6rem 1.8rem; border: 1px solid rgba(196,133,106,.12); display: flex; flex-direction: column; justify-content: space-between; }
     .resume-section { margin-bottom: 2.8rem; }
     .resume-section:last-child { margin-bottom: 0; }
-    .resume-section h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; margin-bottom: 1.4rem; padding-bottom: .55rem; border-bottom: 1.5px solid var(--sunrays); }
+    .resume-section h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; margin-bottom: 1.4rem; padding-bottom: .55rem; border-bottom: 1.5px solid var(--hotpink); }
     .resume-item { margin-bottom: 1.7rem; }
     .resume-item-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: .2rem; flex-wrap: wrap; gap: .3rem; }
     .resume-item-top strong { font-weight: 500; font-size: .93rem; }
@@ -293,7 +293,7 @@
 
     /* ── CONTACT ── */
     #contact { background: var(--ink); color: var(--cream); text-align: center; position: relative; overflow: hidden; }
-    .cb1 { position: absolute; width: 400px; height: 400px; border-radius: 50%; background: var(--sunrays); opacity: .08; filter: blur(80px); top: -100px; left: -100px; }
+    .cb1 { position: absolute; width: 400px; height: 400px; border-radius: 50%; background: var(--hotpink); opacity: .08; filter: blur(80px); top: -100px; left: -100px; }
     .cb2 { position: absolute; width: 300px; height: 300px; border-radius: 50%; background: var(--hotpink); opacity: .08; filter: blur(80px); bottom: -60px; right: -60px; }
     #contact .section-label { color: var(--blush); margin-bottom: 1rem; }
     #contact .section-title { color: var(--cream); margin: 0 auto 1.2rem; }
@@ -337,8 +337,9 @@
       section { padding: 4rem 5vw; }
       #hero { padding: 5rem 5vw 3rem; }
       .hero-sub { font-size: .95rem; }
-      /* Carousel on mobile */
+      /* Carousel on mobile — hide arrows, rely on swipe */
       .carousel-wrap { padding: 0; }
+      .carousel-btn { display: none; }
       .case-card { width: 82vw; grid-template-columns: 1fr; }
       .case-card.flip { direction: ltr; }
       .case-card.flip .case-info, .case-card.flip .case-visual { direction: ltr; }
@@ -693,10 +694,10 @@
 
     <!-- CS 1: Pediatric Vaccine Management -->
     <div id="cs-1" style="display:none">
-      <div class="cs-hero" style="background:linear-gradient(135deg,#F2B800,#F5CE3A)">
+      <div class="cs-hero" style="background:linear-gradient(135deg,#E8457A,#F06898)">
         <div class="cs-hero-content">
           <span class="cs-back" onclick="showMain()">← Back to Work</span>
-          <span class="cs-tag" style="background:#FDE87A;color:#5C4200">Health Tech · 2025–2026</span>
+          <span class="cs-tag" style="background:#FAB8D0;color:#7A0040">Health Tech · 2025–2026</span>
           <h1>Redesigning Pediatric Vaccine Management</h1>
           <p>Making vaccine tracking faster, clearer, and less error-prone for pediatricians managing dozens of patients.</p>
         </div>
@@ -748,10 +749,10 @@
 
     <!-- CS 2: Appointment Confirmation -->
     <div id="cs-2" style="display:none">
-      <div class="cs-hero" style="background:linear-gradient(135deg,#7FB800,#A8D020)">
+      <div class="cs-hero" style="background:linear-gradient(135deg,#A8C037,#C8D84A)">
         <div class="cs-hero-content">
           <span class="cs-back" onclick="showMain()">← Back to Work</span>
-          <span class="cs-tag" style="background:#C4E060;color:#2A4000">Health Tech · 2024</span>
+          <span class="cs-tag" style="background:#FDE87A;color:#5C4200">Health Tech · 2024</span>
           <h1>Streamlining How Patients Confirm</h1>
           <p>Redesigning the appointment confirmation flow to reduce no-shows and make the final step of booking feel effortless.</p>
         </div>
@@ -803,10 +804,10 @@
 
     <!-- CS 3: NowServing Pharmacy -->
     <div id="cs-3" style="display:none">
-      <div class="cs-hero" style="background:linear-gradient(135deg,#D4215E,#E8447A)">
+      <div class="cs-hero" style="background:linear-gradient(135deg,#F2B800,#F5CC30)">
         <div class="cs-hero-content">
           <span class="cs-back" onclick="showMain()">← Back to Work</span>
-          <span class="cs-tag" style="background:#F888B8;color:#6B0030">Health Tech · 2023–2024</span>
+          <span class="cs-tag" style="background:#FDE87A;color:#5C4200">Health Tech · 2023–2024</span>
           <h1>A Better Pharmacy Experience</h1>
           <p>Removing the friction from medication reorders — a task patients do repeatedly, often under stress.</p>
         </div>
@@ -858,7 +859,7 @@
 
     <!-- CS 4: SeriousMD Design System -->
     <div id="cs-4" style="display:none">
-      <div class="cs-hero" style="background:linear-gradient(135deg,#0FA3C4,#2DC0E0)">
+      <div class="cs-hero" style="background:linear-gradient(135deg,#4DB8D4,#7ACFE0)">
         <div class="cs-hero-content">
           <span class="cs-back" onclick="showMain()">← Back to Work</span>
           <span class="cs-tag" style="background:#7AD8F0;color:#004E60">Design System · 2022–2023</span>
@@ -1059,10 +1060,18 @@
       let startX = 0;
       const outer = getOuter();
       if (outer) {
-        outer.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, {passive:true});
+        let startY = 0;
+        outer.addEventListener('touchstart', e => {
+          startX = e.touches[0].clientX;
+          startY = e.touches[0].clientY;
+        }, {passive:true});
         outer.addEventListener('touchend', e => {
           const dx = e.changedTouches[0].clientX - startX;
-          if (Math.abs(dx) > 50) window.carouselMove(dx < 0 ? 1 : -1);
+          const dy = e.changedTouches[0].clientY - startY;
+          // Only trigger carousel if horizontal swipe is dominant
+          if (Math.abs(dx) > Math.abs(dy) * 1.5 && Math.abs(dx) > 40) {
+            window.carouselMove(dx < 0 ? 1 : -1);
+          }
         }, {passive:true});
       }
       // Recalculate on resize (e.g. orientation change)
