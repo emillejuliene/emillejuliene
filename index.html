@@ -105,7 +105,7 @@
     .section-desc { color: var(--muted); max-width: 520px; font-weight: 300; margin-bottom: 3rem; }
 
     /* ── CASE CARDS ── */
-    #work { background: #F6F4F0; }
+    #work { background: #FDF8F5; }
     /* ── CAROUSEL ── */
     .carousel-wrap { position: relative; padding: 0 5vw; }
     .carousel-track-outer {
@@ -124,10 +124,10 @@
     }
     .case-card {
       display: grid; grid-template-columns: 1fr 1fr;
-      border-radius: 20px; overflow: hidden; background: var(--white);
+      border-radius: 20px; overflow: hidden; background: #FDF4EE;
       cursor: pointer;
-      width: min(640px, 80vw); flex-shrink: 0;
-      min-height: 320px;
+      width: min(600px, 78vw); flex-shrink: 0;
+      height: min(340px, 52vh);
       transition: transform .45s ease, box-shadow .45s ease, opacity .45s ease, filter .45s ease;
       opacity: 0.4; filter: blur(1px); transform: scale(0.95);
     }
@@ -162,25 +162,25 @@
       transition: background .2s, width .2s; padding: 0;
     }
     .carousel-dot.active { background: var(--hotpink); width: 24px; border-radius: 4px; }
-    .case-visual { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; min-height: 280px; }
-    .cv-blush    { background: linear-gradient(135deg,#E8457A,#F06898); }
-    .cv-sage     { background: linear-gradient(135deg,#A8C037,#C4D840); }
-    .cv-lavender { background: linear-gradient(135deg,#F2B800,#F5CC30); }
-    .cv-sky     { background: linear-gradient(135deg,#4DB8D4,#70CCE0); }
+    .case-visual { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; min-height: 0; height: 100%; }
+    .cv-blush    { background: linear-gradient(140deg,#F5C842 0%,#E8457A 50%,#4DB8D4 100%); opacity:.85; }
+    .cv-sage     { background: linear-gradient(140deg,#E0457B 0%,#F2B800 50%,#A8C037 100%); opacity:.85; }
+    .cv-lavender { background: linear-gradient(140deg,#4DB8D4 0%,#E8457A 50%,#F2B800 100%); opacity:.85; }
+    .cv-sky     { background: linear-gradient(140deg,#A8C037 0%,#4DB8D4 50%,#E8457A 100%); opacity:.85; }
     .ct-sky      { background: #7AD8F0; color: #004E60; }
     .case-mockup { width: 68%; aspect-ratio: 4/3; background: rgba(255,255,255,.6); border-radius: 12px; box-shadow: 0 8px 32px rgba(44,40,37,.12); backdrop-filter: blur(4px); display: flex; flex-direction: column; padding: 1.1rem; gap: .5rem; }
     .mock-bar { height: 7px; border-radius: 4px; background: rgba(44,40,37,.15); }
     .mock-bar.short { width: 40%; } .mock-bar.med { width: 68%; } .mock-bar.long { width: 90%; }
     .mock-row { display: flex; gap: .5rem; }
     .mock-box { flex: 1; height: 44px; border-radius: 8px; background: rgba(44,40,37,.08); }
-    .case-info { padding: 2.8rem 3rem 2.8rem 3.2rem; display: flex; flex-direction: column; justify-content: center; }
+    .case-info { padding: 1.8rem 2rem 1.8rem 2.2rem; display: flex; flex-direction: column; justify-content: center; overflow: hidden; }
     .case-tag { display: inline-block; font-size: .7rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; padding: .28rem .7rem; border-radius: 100px; margin-bottom: 1rem; }
     .ct-blush    { background: #FAB8D0; color: #7A0040; }
     .ct-sage     { background: #C4E060; color: #2A4000; }
     .ct-lavender { background: #FDE87A; color: #5C4200; }
-    .case-info h3 { font-family: 'Playfair Display', serif; font-size: 1.45rem; line-height: 1.25; margin-bottom: .75rem; }
-    .case-info p  { color: var(--muted); font-size: .9rem; font-weight: 300; margin-bottom: 1.6rem; line-height: 1.6; }
-    .case-meta { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.6rem; }
+    .case-info h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; line-height: 1.25; margin-bottom: .5rem; }
+    .case-info p  { color: var(--muted); font-size: .82rem; font-weight: 300; margin-bottom: 1rem; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .case-meta { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .9rem; }
     .case-pill { font-size: .73rem; color: var(--muted); background: rgba(44,40,37,.06); padding: .22rem .7rem; border-radius: 100px; }
     .case-link { display: inline-flex; align-items: center; gap: .4rem; font-size: .85rem; font-weight: 500; color: var(--hotpink); transition: gap .2s; }
     .case-link:hover { gap: .7rem; }
@@ -1061,17 +1061,24 @@
       const outer = getOuter();
       if (outer) {
         let startY = 0;
+        let isHorizontalSwipe = false;
         outer.addEventListener('touchstart', e => {
           startX = e.touches[0].clientX;
           startY = e.touches[0].clientY;
+          isHorizontalSwipe = false;
         }, {passive:true});
-        outer.addEventListener('touchend', e => {
-          const dx = e.changedTouches[0].clientX - startX;
-          const dy = e.changedTouches[0].clientY - startY;
-          // Only trigger carousel if horizontal swipe is dominant
-          if (Math.abs(dx) > Math.abs(dy) * 1.5 && Math.abs(dx) > 40) {
-            window.carouselMove(dx < 0 ? 1 : -1);
+        outer.addEventListener('touchmove', e => {
+          const dx = Math.abs(e.touches[0].clientX - startX);
+          const dy = Math.abs(e.touches[0].clientY - startY);
+          if (dx > dy * 1.2 && dx > 8) {
+            isHorizontalSwipe = true;
+            e.preventDefault(); // lock vertical scroll while swiping horizontally
           }
+        }, {passive:false});
+        outer.addEventListener('touchend', e => {
+          if (!isHorizontalSwipe) return;
+          const dx = e.changedTouches[0].clientX - startX;
+          if (Math.abs(dx) > 40) window.carouselMove(dx < 0 ? 1 : -1);
         }, {passive:true});
       }
       // Recalculate on resize (e.g. orientation change)
