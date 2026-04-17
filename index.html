@@ -186,7 +186,7 @@
     section { padding: 5.5rem 5vw; }
     #work { padding: 4rem 5vw 3.5rem; }
     .section-label { font-size: .72rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin-bottom: .5rem; }
-    .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.7rem,3.5vw,2.8rem); line-height: 1.2; color: var(--ink); margin-bottom: .9rem; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.25rem,2.2vw,1.85rem); line-height: 1.2; color: var(--ink); margin-bottom: .9rem; }
     .section-desc { color: var(--muted); max-width: 520px; font-weight: 300; margin-bottom: 2rem; }
 
     /* ── EXPERIENCE TIMELINE ── */
@@ -237,16 +237,7 @@
       .exp-item { grid-template-columns: 36px 1fr; gap: 0 1.2rem; }
       .exp-dot { width: 34px; height: 34px; font-size: .85rem; }
     }
-    #strengths { background: var(--cream); border-top: 1px solid rgba(196,133,106,.1); }
-    .strengths-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; margin-top: .5rem; }
-    .strength-card { background: var(--white); border-radius: 20px; padding: 2rem 1.8rem; border: 1px solid rgba(44,40,37,.06); }
-    .strength-icon { font-size: 1.4rem; margin-bottom: 1rem; display: block; }
-    .strength-card h3 { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--ink); margin-bottom: 1.1rem; padding-bottom: .6rem; border-bottom: 1.5px solid var(--hotpink); }
-    .strength-list { list-style: none; display: flex; flex-direction: column; gap: .55rem; }
-    .strength-list li { font-size: .85rem; color: var(--muted); font-weight: 300; line-height: 1.5; padding-left: 1rem; position: relative; }
-    .strength-list li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-size: .8rem; }
-    @media (max-width: 900px) { .strengths-grid { grid-template-columns: 1fr; gap: 1.2rem; } }
-    @media (max-width: 600px) { .strengths-grid { grid-template-columns: 1fr; gap: 1rem; } #strengths { padding: 3rem 5vw; } }
+    @media (max-width: 600px) { #strengths { padding: 3rem 5vw; } }
 
     /* ── TESTIMONIALS STRIP ── */
     #testimonials { background: var(--ink); color: var(--cream); border-top: none; position: relative; overflow: hidden; }
@@ -254,11 +245,11 @@
     #testimonials .section-title { color: var(--cream); }
     .testi-bg1 { position: absolute; width: 400px; height: 400px; border-radius: 50%; background: var(--hotpink); opacity: .06; filter: blur(80px); top: -100px; left: -100px; pointer-events: none; }
     .testi-bg2 { position: absolute; width: 300px; height: 300px; border-radius: 50%; background: var(--skyblue); opacity: .07; filter: blur(80px); bottom: -60px; right: -60px; pointer-events: none; }
-    .testimonials-strip { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.8rem; margin-top: .5rem; position: relative; z-index: 1; }
+    .testimonials-strip { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.8rem; margin-top: 2rem; position: relative; z-index: 1; }
     .testi-card { background: rgba(250,246,241,.07); border-radius: 18px; padding: 1.6rem 1.8rem; border: 1px solid rgba(250,246,241,.1); display: flex; flex-direction: column; justify-content: space-between; gap: 1rem; backdrop-filter: blur(6px); transition: background .2s; }
     .testi-card:hover { background: rgba(250,246,241,.1); }
-    .testi-quote { font-family: 'Playfair Display', serif; font-size: .97rem; color: var(--cream); font-style: italic; line-height: 1.6; }
-    .testi-quote::before { content: '\201C'; color: var(--hotpink); font-size: 1.4rem; line-height: 0; vertical-align: -0.3em; margin-right: .1em; }
+    .testi-quote { font-family: 'DM Sans', sans-serif; font-size: .93rem; color: rgba(250,246,241,.88); font-weight: 300; line-height: 1.8; letter-spacing: .01em; }
+    .testi-quote::before { content: '\201C'; color: var(--hotpink); font-size: 1.3rem; line-height: 0; vertical-align: -0.3em; margin-right: .1em; font-family: 'Playfair Display', serif; }
     .testi-author { font-size: .78rem; color: var(--blush); font-weight: 500; letter-spacing: .04em; opacity: .8; }
     .testi-contact-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 1.4rem; margin-top: 3.2rem; padding-top: 2.8rem; border-top: 1px solid rgba(250,246,241,.08); position: relative; z-index: 1; }
     .testi-contact-links a { color: rgba(250,246,241,.45); text-decoration: none; font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; transition: color .2s; }
@@ -275,6 +266,12 @@
       padding: 1.2rem 0 1.8rem;
       mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
       -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    }
+    @media (max-width: 600px) {
+      .carousel-track-outer {
+        mask-image: none;
+        -webkit-mask-image: none;
+      }
     }
     /* Transform-based track — no scroll involved */
     .cases-grid {
@@ -499,6 +496,134 @@
     .contact-links a:hover { color: var(--blush); }
     footer { background: var(--ink); border-top: 1px solid rgba(250,246,241,.07); text-align: center; padding: 1.4rem 5vw; font-size: .77rem; color: rgba(250,246,241,.3); }
 
+    /* ── EXPERIENCE & CAPABILITIES ── */
+    #strengths { background: var(--cream); border-top: 1px solid rgba(196,133,106,.1); }
+
+    /* Scroll-reveal animation */
+    @keyframes revealUp {
+      from { opacity: 0; transform: translateY(36px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .ind-card {
+      opacity: 0;
+      transform: translateY(36px);
+    }
+    .ind-card.revealed {
+      animation: revealUp .6s cubic-bezier(.22,.68,0,1.2) both;
+    }
+    .ind-card:nth-child(1).revealed { animation-delay: 0s; }
+    .ind-card:nth-child(2).revealed { animation-delay: .12s; }
+    .ind-card:nth-child(3).revealed { animation-delay: .24s; }
+
+    /* Grid layout */
+    .ind-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.4rem;
+      margin-top: 2.8rem;
+    }
+
+    /* Card shell */
+    .ind-card {
+      background: var(--white);
+      border: 1px solid rgba(44,40,37,.08);
+      border-radius: 22px;
+      padding: 2.2rem 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0;
+      position: relative;
+      overflow: hidden;
+      transition: box-shadow .28s ease;
+      cursor: default;
+    }
+    .ind-card:hover {
+      box-shadow: 0 8px 28px rgba(44,40,37,.07);
+    }
+
+    /* Subtle top line */
+    .ind-card-glow {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      border-radius: 22px 22px 0 0;
+      background: rgba(44,40,37,.1);
+    }
+
+    /* Icon circle — neutral */
+    .ind-icon {
+      width: 52px; height: 52px; border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.45rem;
+      margin-bottom: 1.3rem;
+      background: rgba(44,40,37,.05);
+      flex-shrink: 0;
+    }
+
+    /* Industry name */
+    .ind-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.3;
+      margin-bottom: 1rem;
+    }
+
+    /* Role pills — subtle, monochrome */
+    .ind-roles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .4rem;
+    }
+    .ind-pill {
+      display: inline-flex;
+      align-items: center;
+      font-size: .72rem;
+      font-weight: 500;
+      padding: .28rem .85rem;
+      border-radius: 100px;
+      letter-spacing: .02em;
+      white-space: nowrap;
+      background: rgba(44,40,37,.06);
+      color: var(--muted);
+      border: 1px solid rgba(44,40,37,.09);
+    }
+
+    /* ── RESUME CTA ── */
+    .exp-resume-wrap {
+      margin-top: 2.2rem;
+      display: flex;
+      justify-content: center;
+    }
+    .exp-resume-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      text-decoration: none;
+      background: transparent;
+      color: var(--ink);
+      font-size: .88rem;
+      font-weight: 500;
+      padding: .8rem 1.8rem;
+      border-radius: 100px;
+      border: 1.5px solid var(--ink);
+      transition: background .25s, color .25s;
+    }
+    .exp-resume-btn:hover { background: var(--ink); color: var(--cream); }
+
+    @media (max-width: 900px) {
+      .ind-grid { grid-template-columns: 1fr; gap: 1rem; }
+    }
+    @media (max-width: 600px) {
+      #strengths { padding: 3rem 5vw; }
+      .ind-card { padding: 1.8rem 1.4rem 1.7rem; }
+      .ind-name { font-size: .95rem; }
+    }
+
     /* ── RESPONSIVE: TABLET ≤900px ── */
     @media (max-width: 900px) {
       .nav-links { display: none; }
@@ -562,7 +687,7 @@
   <div class="pw-card">
     <div class="pw-lock-icon">🔒</div>
     <h1 class="pw-title">Em's Portfolio</h1>
-    <p class="pw-subtitle">This portfolio is password protected.<br>Enter password to continue.</p>
+    <p class="pw-subtitle">This portfolio is private for now.<br>Enter the password to take a look.</p>
     <div class="pw-input-wrap">
       <input class="pw-input" id="pw-input" type="password" placeholder="Enter password" autocomplete="off" onkeydown="if(event.key==='Enter')tryPassword()" />
       <button class="pw-toggle" id="pw-toggle" onclick="togglePwVisibility()" aria-label="Show/hide password" tabindex="-1">
@@ -586,9 +711,9 @@
   <nav>
     <a class="nav-logo" href="#hero" onclick="showMain()">Emille Juliene</a>
     <ul class="nav-links">
-      <li><a href="#" target="_blank">Resume</a></li>
       <li><a href="#work" onclick="showMain()">Portfolio</a></li>
       <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      <li><a href="mailto:emille@email.com">Email</a></li>
     </ul>
     <button class="nav-burger" id="nav-burger" onclick="toggleMenu()" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -596,9 +721,9 @@
   </nav>
 
   <div class="nav-mobile-menu" id="mobile-menu">
-    <a href="#" target="_blank" onclick="closeMenu()">Resume</a>
     <a href="#work" onclick="showMain();closeMenu()">Portfolio</a>
     <a href="https://linkedin.com" target="_blank" onclick="closeMenu()">LinkedIn</a>
+    <a href="mailto:emille@email.com" onclick="closeMenu()">Email</a>
   </div>
 
   <!-- ═══ MAIN VIEW ═══ -->
@@ -621,10 +746,7 @@
             View Work
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="#" class="hero-cta-secondary">
-            Download Resume
-            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 1v9m0 0L4 7m3.5 3L11 7M2 13h11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
+
         </div>
         <p class="hero-meta">
           <span>Design</span><span class="hero-meta-dot"></span>
@@ -640,129 +762,49 @@
       <h2 class="section-title">What I Do &amp; Where I've Done It</h2>
       <p class="section-desc">7 years shipping across healthcare, media, and beyond — here's how I work and where I've worked.</p>
 
-      <!-- Experience Timeline -->
-      <div class="exp-timeline">
+      <div class="ind-grid">
 
-        <!-- Telehealth -->
-        <div class="exp-item">
-          <div class="exp-dot-col">
-            <div class="exp-dot telehealth">📱</div>
-          </div>
-          <div class="exp-body">
-            <div class="exp-header">
-              <div>
-                <div class="exp-title">Telehealth Services</div>
-                <div style="font-size:.78rem;color:var(--muted);font-weight:300;">NowServing · SeriousMD</div>
-              </div>
-              <span class="exp-period">2022 – 2025</span>
-            </div>
-            <div class="exp-role-chips">
-              <span class="exp-chip chip-pm">⚙ Product Manager</span>
-              <span class="exp-chip chip-ux">✦ Product Designer</span>
-            </div>
-            <p class="exp-desc">Led product strategy and end-to-end design for virtual care and telehealth platforms — from appointment booking flows to the doctor dashboard. Balanced clinical accuracy with patient-friendly interactions across iOS, Android, and web.</p>
-            <div class="exp-caps">
-              <span class="exp-cap-tag">User Research</span>
-              <span class="exp-cap-tag">Journey Mapping</span>
-              <span class="exp-cap-tag">Roadmapping</span>
-              <span class="exp-cap-tag">Figma</span>
-              <span class="exp-cap-tag">Stakeholder Alignment</span>
-              <span class="exp-cap-tag">Usability Testing</span>
-            </div>
+        <!-- Telehealth & Pharmacy -->
+        <div class="ind-card health">
+          <div class="ind-card-glow"></div>
+          <div class="ind-icon">💊</div>
+          <div class="ind-name">Telehealth &amp; Pharmacy Services</div>
+          <div class="ind-roles">
+            <span class="ind-pill pill-pm">Product Manager</span>
+            <span class="ind-pill pill-pd">Product Designer</span>
           </div>
         </div>
 
         <!-- EMR -->
-        <div class="exp-item">
-          <div class="exp-dot-col">
-            <div class="exp-dot emr">🗂</div>
-          </div>
-          <div class="exp-body">
-            <div class="exp-header">
-              <div>
-                <div class="exp-title">Electronic Medical Records (EMR)</div>
-                <div style="font-size:.78rem;color:var(--muted);font-weight:300;">SeriousMD</div>
-              </div>
-              <span class="exp-period">2022 – 2024</span>
-            </div>
-            <div class="exp-role-chips">
-              <span class="exp-chip chip-pm">⚙ Product Manager</span>
-              <span class="exp-chip chip-ux">✦ Product Designer</span>
-            </div>
-            <p class="exp-desc">Owned the doctor-facing EMR experience — redesigning core workflows like vaccine management, prescription tracking, and patient records. Shipped the platform's first atomic design system, reducing handoff time by 55%.</p>
-            <div class="exp-caps">
-              <span class="exp-cap-tag">Design Systems</span>
-              <span class="exp-cap-tag">Clinical UX</span>
-              <span class="exp-cap-tag">Feature Prioritization</span>
-              <span class="exp-cap-tag">Dev Handoff</span>
-              <span class="exp-cap-tag">Accessibility</span>
-              <span class="exp-cap-tag">Figma · Zeplin</span>
-            </div>
+        <div class="ind-card emr">
+          <div class="ind-card-glow"></div>
+          <div class="ind-icon">🩺</div>
+          <div class="ind-name">Electronic Medical Records (EMR)</div>
+          <div class="ind-roles">
+            <span class="ind-pill pill-pm">Product Manager</span>
+            <span class="ind-pill pill-pd">Product Designer</span>
           </div>
         </div>
 
-        <!-- Enterprise -->
-        <div class="exp-item">
-          <div class="exp-dot-col">
-            <div class="exp-dot enterprise">🖥</div>
-          </div>
-          <div class="exp-body">
-            <div class="exp-header">
-              <div>
-                <div class="exp-title">Enterprise Systems Support</div>
-                <div style="font-size:.78rem;color:var(--muted);font-weight:300;">Oracle RMS</div>
-              </div>
-              <span class="exp-period">2019 – 2022</span>
-            </div>
-            <div class="exp-role-chips">
-              <span class="exp-chip chip-dev">⟨/⟩ Associate Software Engineer</span>
-            </div>
-            <p class="exp-desc">Supported and maintained enterprise retail management systems on Oracle RMS — writing scripts, debugging data pipelines, and working closely with cross-functional teams to resolve critical production issues.</p>
-            <div class="exp-caps">
-              <span class="exp-cap-tag">Oracle RMS</span>
-              <span class="exp-cap-tag">SQL</span>
-              <span class="exp-cap-tag">Data Pipelines</span>
-              <span class="exp-cap-tag">Technical Documentation</span>
-              <span class="exp-cap-tag">Cross-functional Collaboration</span>
-            </div>
+        <!-- Retail Operations -->
+        <div class="ind-card retail">
+          <div class="ind-card-glow"></div>
+          <div class="ind-icon">🛍️</div>
+          <div class="ind-name">Retail Operations Technology</div>
+          <div class="ind-roles">
+            <span class="ind-pill pill-eng">Associate Software Engineer</span>
           </div>
         </div>
 
       </div>
 
-      <!-- Capabilities grid -->
-      <div class="strengths-grid" style="margin-top:3rem">
-        <div class="strength-card">
-          <span class="strength-icon">🔍</span>
-          <h3>Research</h3>
-          <ul class="strength-list">
-            <li>Contextual interviews and clinic-side observations</li>
-            <li>Usability testing with measurable task metrics</li>
-            <li>Turning messy findings into clear design direction</li>
-            <li>Journey mapping across complex, multi-role workflows</li>
-          </ul>
-        </div>
-        <div class="strength-card">
-          <span class="strength-icon">♟</span>
-          <h3>Product Thinking</h3>
-          <ul class="strength-list">
-            <li>Scoping features that balance user need and business reality</li>
-            <li>Roadmap input and prioritization with engineering constraints in mind</li>
-            <li>Stakeholder alignment without the deck-heavy process</li>
-            <li>Connecting design decisions to measurable outcomes</li>
-          </ul>
-        </div>
-        <div class="strength-card">
-          <span class="strength-icon">⚡</span>
-          <h3>Execution</h3>
-          <ul class="strength-list">
-            <li>End-to-end flows, from blank canvas to shipped feature</li>
-            <li>Design systems teams actually adopt and maintain</li>
-            <li>Dev handoffs that reduce back-and-forth, not increase it</li>
-            <li>Iterating fast without losing quality or rationale</li>
-          </ul>
-        </div>
+      <div class="exp-resume-wrap">
+        <a href="#" class="exp-resume-btn">
+          Download Résumé
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v8M8 10l-3-3m3 3l3-3M2 14h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
+
     </section>
 
     <section id="work">
@@ -920,8 +962,9 @@
         </div>
       </div>
       <div class="testi-contact-links">
-        <a href="#">LinkedIn</a><a href="#">Dribbble</a>
-        <a href="#">Behance</a><a href="#">Email</a>
+        <a href="#work" onclick="showMain()">Portfolio</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="mailto:emille@email.com">Email</a>
       </div>
     </section>
 
@@ -1159,18 +1202,101 @@
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 
-  /* PASSWORD */
-  window.tryPassword = function() {
-    const input = document.getElementById('pw-input');
+  /* ─────────────────────────────────────────────────────────────────
+     ACCESS CONTROL
+     ─────────────────────────────────────────────────────────────────
+     How to regenerate the hash:
+       1. Open your browser console on any page.
+       2. Run:
+            const buf = await crypto.subtle.digest('SHA-256',
+              new TextEncoder().encode('YourNewPassword'));
+            console.log([...new Uint8Array(buf)]
+              .map(b => b.toString(16).padStart(2,'0')).join(''));
+       3. Paste the output as the value of _vk below.
+
+     How the bypass token works:
+       Visit the page with ?ref=<bypass-token> in the URL.
+       The token is hashed the same way — change _bk to the hash of
+       whatever token string you choose (e.g. 'sharelink2025').
+  ──────────────────────────────────────────────────────────────────── */
+
+  // SHA-256 hash of the access passphrase (not the passphrase itself)
+  const _vk = '029c56dbb71d03fa12f4d1f85e907cf3597d3a8965f2dec233ffd57519e43d9b';
+  // SHA-256 hash of the URL bypass token string (token: 'sharelink2026')
+  const _bk = '6f6288d88dd9dacdb2b50510afe19d6a490ec81fe315ca10d0d1a391e4b8ee28';
+
+  // Storage key — intentionally generic, not "password" or "access"
+  const _sk = '_pf_v1';
+
+  // Async helper: hash a plain string → hex string
+  async function _digest(str) {
+    const buf = await crypto.subtle.digest(
+      'SHA-256', new TextEncoder().encode(str)
+    );
+    return [...new Uint8Array(buf)]
+      .map(b => b.toString(16).padStart(2, '0')).join('');
+  }
+
+  // Reveal the portfolio and clean up the gate
+  function _unlock(opts = {}) {
+    // Persist access so refresh doesn't re-lock the page
+    try { localStorage.setItem(_sk, '1'); } catch(_) {}
+
+    if (opts.cleanUrl) {
+      // Strip the ?ref= param for a cleaner URL without reloading
+      const url = new URL(location.href);
+      url.searchParams.delete('ref');
+      history.replaceState(null, '', url.toString());
+    }
+
+    document.getElementById('password-page').style.display = 'none';
+    document.getElementById('portfolio-content').style.display = 'block';
+
+    // Re-initialize carousel now that cards have real dimensions
+    requestAnimationFrame(function() {
+      setTimeout(function() { if (window._carouselInit) window._carouselInit(); }, 60);
+    });
+  }
+
+  // Show the wrong-passphrase error state
+  function _denyInput() {
+    const input   = document.getElementById('pw-input');
     const errorEl = document.getElementById('pw-error');
-    if (input.value === 'EmilleUXPM') {
-      document.getElementById('password-page').style.display = 'none';
-      document.getElementById('portfolio-content').style.display = 'block';
+    input.classList.add('error');
+    errorEl.classList.add('visible');
+    input.value = '';
+    setTimeout(() => input.classList.remove('error'), 400);
+  }
+
+  // On page load: check localStorage → URL param → show gate
+  (async function _boot() {
+    // 1. Already granted in a previous visit?
+    try {
+      if (localStorage.getItem(_sk) === '1') { _unlock(); return; }
+    } catch(_) {}
+
+    // 2. URL bypass token present? (?ref=yourtoken)
+    const refParam = new URLSearchParams(location.search).get('ref');
+    if (refParam) {
+      const h = await _digest(refParam);
+      if (h === _bk) { _unlock({ cleanUrl: true }); return; }
+      // Invalid token — fall through to password gate (don't reveal it was tried)
+    }
+
+    // 3. Nothing matched — password gate stays visible (default state)
+  })();
+
+  // Called by the submit button / Enter key
+  window.tryPassword = async function() {
+    const input = document.getElementById('pw-input');
+    const val   = input.value.trim();
+    if (!val) return;
+
+    const h = await _digest(val);
+    if (h === _vk) {
+      _unlock();
     } else {
-      input.classList.add('error');
-      errorEl.classList.add('visible');
-      input.value = '';
-      setTimeout(() => input.classList.remove('error'), 400);
+      _denyInput();
     }
   };
   window.togglePwVisibility = function() {
@@ -1194,6 +1320,23 @@
     document.getElementById('nav-burger').classList.remove('open');
     document.getElementById('mobile-menu').classList.remove('open');
   };
+
+  /* SCROLL REVEAL — industry cards */
+  (function() {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.ind-card').forEach(function(el) {
+        observer.observe(el);
+      });
+    });
+  })();
 
   /* CASE STUDY ROUTING */
   window.openCase = function(n) {
@@ -1317,9 +1460,17 @@
     document.addEventListener('DOMContentLoaded', function() {
       const track = getTrack();
       if (!track) return;
-      // Remove old scroll-snap styles just in case
       track.style.overflowX = 'visible';
-      setTimeout(() => goToSlot(1, false), 60);
+
+      // Expose re-init so tryPassword can call it after reveal
+      window._carouselInit = function() {
+        goToSlot(1, false);
+      };
+
+      // Only auto-init if portfolio is already visible (no password gate)
+      if (document.getElementById('portfolio-content').style.display !== 'none') {
+        setTimeout(() => goToSlot(1, false), 60);
+      }
 
       // Swipe support
       let startX = 0;
